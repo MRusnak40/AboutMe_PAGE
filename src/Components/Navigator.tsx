@@ -8,7 +8,7 @@ export default function Navigator() {
     <nav className="p-4">
       <ul className="flex flex-col gap-2">
         <li>
-          <Link className="text-blue-600 hover:underline" to="/home">
+          <Link className="text-blue-600 hover:underline" to="/">
             HOME
           </Link>
         </li>

@@ -13,15 +13,13 @@ export function AppRouter() {
     <Routes>
       <Route path="/" element={<App />} />
 
-      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<App/>} />
       <Route path="/om" element={<AboutMe />} />
       <Route path="/vzdelani" element={<Study />} />
       <Route path="/zkušenosti" element={<Knowlage />} />
       <Route path="/certifikaty" element={<Certificates />} />
       <Route path="/portfolio" element={<div><Portfolio></Portfolio></div>} />
       <Route path="/kontakt" element={<div><Contact></Contact></div>} />
-
-
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )

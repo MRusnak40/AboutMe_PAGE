@@ -1,18 +1,15 @@
-import Navigator from './Components/Navigator'
+
+
+
+import Home from './Components/Home'
 
 function App() {
-
-
   return (
     <>
-    <div>
-      <Navigator></Navigator>
-
-
-    </div>
-     
+      <Home />
     </>
   )
 }
 
 export default App
+

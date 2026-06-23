@@ -1,4 +1,10 @@
+import Navigator from "./Navigator"
+
 export default function Home() {
-  return null
+  return (<>
+    <Navigator></Navigator>
+  
+  
+  </>)
 }
 
