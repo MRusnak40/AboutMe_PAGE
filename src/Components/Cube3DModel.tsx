@@ -21,7 +21,7 @@ export default function Cube3DModel() {
 
   // POZICE: Vpravo (26 % od středu) a přesně uprostřed na výšku (Y = 0)
   const posX = viewport.width * 0.26
-  const posY = 0
+  const posY = -0.5
   const posZ = 0
 
   // VELIKOST: Velká dominantní kostka odvíjející se od výšky obrazovky
