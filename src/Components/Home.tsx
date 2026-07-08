@@ -31,13 +31,15 @@ export default function Home() {
         */}
         <div className="w-full md:w-3/5 space-y-6 text-white pointer-events-auto">
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight">
-            Hi, I'm <span className="text-[#6ee7b7]">Matyas Rusnak</span>,
+            Hi, I'm <span className="text-red-500">Matyas Rusnak</span>,
+
           </h1>
           <p className="text-xl sm:text-2xl md:text-3xl text-gray-300 font-light max-w-xl">
             and I make things work
           </p>
           <div className="pt-4">
-            <button className="px-8 py-3 text-sm md:text-base border border-[#6ee7b7] text-[#6ee7b7] rounded-full hover:bg-[#6ee7b7]/10 transition-all cursor-pointer">
+            <button className="px-8 py-3 text-sm md:text-base border border-red-500 text-red-500 rounded-full hover:bg-red-500/10 transition-all cursor-pointer active:scale-[1.03]">
+
               WORK WITH ME &rarr;
             </button>
           </div>
