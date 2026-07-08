@@ -30,7 +30,7 @@ export default function Cube3DModel() {
   // KONSTANTY PRO ROTACI
   const DEFAULT_ROTATION_X = 0.4
   const DEFAULT_ROTATION_Z = 0.1
-  const IDLE_SPIN_SPEED = 0.003
+  const IDLE_SPIN_SPEED = 0.002
 
   const isDragging = useRef(false)
   const previousMouse = useRef({ x: 0, y: 0 })
@@ -79,12 +79,12 @@ export default function Cube3DModel() {
       groupRef.current.rotation.x = THREE.MathUtils.lerp(
         groupRef.current.rotation.x,
         DEFAULT_ROTATION_X,
-        0.05
+        0.003
       )
       groupRef.current.rotation.z = THREE.MathUtils.lerp(
         groupRef.current.rotation.z,
         DEFAULT_ROTATION_Z,
-        0.05
+        0.003
       )
     }
   })
