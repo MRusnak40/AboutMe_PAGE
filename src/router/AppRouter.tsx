@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 import App from '../App'
-import Home from '../Components/Home'
 import AboutMe from '../Components/AboutMe'
+
 import Study from '../Components/Study'
 import Certificates from '../Components/Certificates'
 import Contact from '../Components/Contact'

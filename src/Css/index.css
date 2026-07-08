@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+#root {
+  background-image: url('../assets/BlackBacgroundWithdetaILS.jpg'); /* Obrázek máš ve složce public/ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Pozadí drží na místě, i když scrolluješ */
+  min-height: 100vh; /* Zaručí, že pozadí neskončí v půlce prázdné stránky */
+}
