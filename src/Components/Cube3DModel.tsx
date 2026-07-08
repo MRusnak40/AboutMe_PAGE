@@ -98,7 +98,7 @@ export default function Cube3DModel() {
       floatingRange={[-0.05, 0.05]}
     >
       <group ref={groupRef} rotation={[DEFAULT_ROTATION_X, 0.5, DEFAULT_ROTATION_Z]}>
-        <Center center>
+        <Center>
           <primitive object={scene} scale={[scale, scale, scale]} />
         </Center>
       </group>

@@ -1,5 +1,3 @@
-import RollingMenu from "./RollingMenu"
-import Navigator from "./Navigator"
 import Scene3D from "./SceneFor3D"
 
 export default function Home() {
@@ -30,10 +28,11 @@ export default function Home() {
         {/* Zde musíme dát pointer-events-auto, aby šlo kliknout na tlačítko a vybrat text. 
         */}
         <div className="w-full md:w-3/5 space-y-6 text-white pointer-events-auto">
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold tracking-tight">
             Hi, I'm <span className="text-red-500">Matyas Rusnak</span>,
 
           </h1>
+
           <p className="text-xl sm:text-2xl md:text-3xl text-gray-300 font-light max-w-xl">
             and I make things work
           </p>
