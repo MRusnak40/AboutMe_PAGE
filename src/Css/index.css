@@ -8,3 +8,18 @@
   background-attachment: fixed; /* Pozadí drží na místě, i když scrolluješ */
   min-height: 100vh; /* Zaručí, že pozadí neskončí v půlce prázdné stránky */
 }
+
+.slow-pulse {
+  /* 4s = délka jednoho cyklu, ease-in-out = zajistí plynulost */
+  animation: fade-pulse 4s ease-in-out infinite;
+}
+
+@keyframes fade-pulse {
+  0%, 100% { 
+    opacity: 1; 
+  }
+  50% { 
+    /* 0.3 znamená, že pohasne na 30% svítivosti, můžeš si to upravit */
+    opacity: 0.3; 
+  }
+}
