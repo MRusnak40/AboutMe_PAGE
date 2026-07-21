@@ -53,7 +53,7 @@ export default function Home() {
           </h1>
 
           <p className="text-2xl md:text-4xl font-light text-gray-200 tracking-wide drop-shadow-lg">
-            I build <span className="font-bold text-red-500 slow-pulse inline-block">digital experiences</span>
+            I build  &nbsp;&nbsp; <span className="font-bold text-red-500 slow-pulse inline-block"> digital experiences</span>
           </p>
 
 
