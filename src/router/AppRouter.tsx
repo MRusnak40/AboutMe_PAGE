@@ -2,11 +2,11 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import App from '../App'
 import AboutMe from '../Components/AboutMe'
 
-import Study from '../Components/Study'
+import Study from '../Components/Education'
 import Certificates from '../Components/Certificates'
 import Contact from '../Components/Contact'
 import Portfolio from '../Components/Portfolio'
-import Knowlage from '../Components/Knowlage'
+import Knowlage from '../Components/Expirience'
 
 export function AppRouter() {
   return (

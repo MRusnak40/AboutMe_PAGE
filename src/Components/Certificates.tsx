@@ -56,7 +56,7 @@ export default function Certificates() {
 
           <div className="flex flex-col gap-8 md:gap-16">
 
-            {/* Změněno z 'project' na 'cert', aby to dávalo sémanticky smysl */}
+          
             {certificates.map((cert, index) => (
               <div key={index} className="group bg-black/60 backdrop-blur-md border border-white/10 rounded-2xl md:rounded-3xl overflow-hidden hover:border-red-500/50 transition-all duration-500 shadow-2xl">
 
@@ -68,7 +68,7 @@ export default function Certificates() {
                     {cert.title}
                   </h3>
 
-                  {/* Vykreslení dovedností/popisu (opraveno na cert.description) */}
+                  
                   <div className="flex flex-wrap gap-1.5 md:gap-3">
                     
                       <span  className="px-2 md:px-4 py-1 md:py-2 text-[9px] md:text-xs font-mono uppercase tracking-widest text-white border border-red-600/50 bg-red-600/10 rounded md:rounded-lg">
@@ -77,7 +77,7 @@ export default function Certificates() {
                     
                   </div>
 
-                  {/* Informace o čase a dokončení poskládané pod sebou */}
+                 
                   <div className="space-y-1 md:space-y-2">
                     <p className="text-sm md:text-lg text-gray-400">
                       <span className="text-white font-bold tracking-wider uppercase text-[10px] md:text-sm">Time spent:</span> {cert.timeSpent}
