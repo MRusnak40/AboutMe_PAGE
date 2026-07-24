@@ -2,7 +2,7 @@ import Scene3D from "./SceneFor3D"
 import Navigator from "./Navigator"
 import RollingMenu from "./RollingMenu"
 import { Link } from "react-router-dom"
-import { useNavigate } from "react-router-dom"
+
 
 
 

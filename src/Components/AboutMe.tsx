@@ -1,7 +1,7 @@
 import Scene3D from "./SceneFor3D"
 import Navigator from "./Navigator"
 import RollingMenu from "./RollingMenu"
-import { Link } from "react-router-dom"
+
 
 export default function AboutMe() {
   return (<>

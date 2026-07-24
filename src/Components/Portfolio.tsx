@@ -3,7 +3,7 @@ import Navigator from "./Navigator"
 import RollingMenu from "./RollingMenu"
 import { Link } from "react-router-dom"
 
-import healthyWebImg from "../assets/BetterPhotoWebForHeaalthier.png"
+
 
 
 const projects = [
