@@ -106,7 +106,7 @@ export default function Study() {
                     to="/contact"
                     className="inline-flex items-center justify-center w-full sm:w-auto gap-2 md:gap-3 px-4 md:px-8 py-2.5 md:py-4 bg-transparent text-red-500 border-2 border-red-500/30 rounded-lg md:rounded-xl font-bold text-sm md:text-lg transition-all duration-300 hover:scale-105 hover:border-red-500 hover:shadow-[0_0_25px_rgba(220,38,38,0.6)]"
                   >
-                    I GOT INTERESTED &rarr;
+                    I WANT MORE &rarr;
                   </Link>
                 </div>
 

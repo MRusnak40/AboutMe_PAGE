@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 
 export default function Navigator() {
+  {"{ name: 'ABOUT ME', path: '/about' },"}
   const navLinks = [
     { name: 'HOME', path: '/' },
-    { name: 'ABOUT ME', path: '/about' },
+    
     { name: 'EDUCATION', path: '/education' },
     { name: 'EXPERIENCE', path: '/experience' },
     { name: 'CERTIFICATES', path: '/certificates' },

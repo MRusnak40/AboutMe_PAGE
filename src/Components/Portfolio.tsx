@@ -3,48 +3,50 @@ import Navigator from "./Navigator"
 import RollingMenu from "./RollingMenu"
 import { Link } from "react-router-dom"
 
+import healthyWebImg from "../assets/BetterPhotoWebForHeaalthier.png"
+
 
 const projects = [
   {
-    title: "web for healthier live",
-    image: "https://www.fotoguru.cz/files/AI-a-fotograf.jpg",
+    title: "Web for healthier live",
+    image: "https://images4.alphacoders.com/692/692043.jpg",
     github: "https://github.com/MRusnak40/School_WEB_PSS_YEAR_WORK",
-    timeSpent: "2 months",
+    timeSpent: "3 months",
     techStack: ['HTML/CSS/JavaScript', "Python", "Database", "Django", "Server Managment"]
   },
   {
-    title: "web for healthier live",
-    image: "https://www.fotoguru.cz/files/AI-a-fotograf.jpg",
-    github: "github",
+    title: "C# Online game with putty",
+    image: "https://wallpaperaccess.com/full/346792.jpg",
+    github: "https://github.com/MRusnak40/ServerGame_Csharp",
     timeSpent: "2 months",
-    techStack: ['HTML/CSS/JavaScript', "Python", "Database", "Django", "Server Managment"]
+    techStack: ['C# Threads', "C#", "Proxy server config", "C# Async methods", "Test cases"]
   },
   {
-    title: "web for healthier live",
-    image: "https://www.fotoguru.cz/files/AI-a-fotograf.jpg",
-    github: "github",
-    timeSpent: "2 months",
-    techStack: ['HTML/CSS/JavaScript', "Python", "Database", "Django", "Server Managment"]
+    title: "Music player",
+    image: "https://wallpapercave.com/wp/wp7293872.jpg",
+    github: "https://github.com/MRusnak40/Musicplayer/tree/master",
+    timeSpent: "1 month",
+    techStack: ['Java', "Java threads", "Java Gui framework", ]
   }, {
-    title: "web for healthier live",
-    image: "https://www.fotoguru.cz/files/AI-a-fotograf.jpg",
+    title: "Smart app to distinguish spam ",
+    image: "https://thumbs.dreamstime.com/b/businessman-working-floating-mail-symbols-warning-signs-over-computer-laptop-suspect-emails-alert-spam-virus-message-449363546.jpg",
     github: "github",
-    timeSpent: "2 months",
-    techStack: ['HTML/CSS/JavaScript', "Python", "Database", "Django", "Server Managment"]
+    timeSpent: "17 days",
+    techStack: ['C#', "Python", "Data managment", "Large data processing", "C# GUI","AI"]
   },
   {
-    title: "web for healthier live",
-    image: "https://www.fotoguru.cz/files/AI-a-fotograf.jpg",
+    title: "Unity hub Shooting game",
+    image: "https://www.pixelstalk.net/wp-content/uploads/2016/05/Gamer-Wallpapers.jpg",
     github: "github",
     timeSpent: "2 months",
-    techStack: ['HTML/CSS/JavaScript', "Python", "Database", "Django", "Server Managment"]
+    techStack: ['C# Scripting', "Object modeling", "Blender"]
   },
   {
-    title: "web for healthier live",
-    image: "https://www.fotoguru.cz/files/AI-a-fotograf.jpg",
-    github: "github",
-    timeSpent: "2 months",
-    techStack: ['HTML/CSS/JavaScript', "Python", "Database", "Django", "Server Managment"]
+    title: "About me web (where you are now)",
+    image: "https://images.unsplash.com/photo-1601315488950-3b5047998b38?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8M2QlMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D",
+    github: "",
+    timeSpent: "15 days",
+    techStack: ['React', "3D obejcts", "Deploy managment", "Server managment"]
   },
 
 ]

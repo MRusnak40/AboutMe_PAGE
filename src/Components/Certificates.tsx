@@ -8,27 +8,27 @@ const certificates = [
   {
     title: "CISCO Linux",
     image: "https://www.fotoguru.cz/files/AI-a-fotograf.jpg",
-    pdfDownload: "https://github.com/MRusnak40/School_WEB_PSS_YEAR_WORK", // Sem pak dej ideálně přímý odkaz na .pdf soubor
+    pdfDownload: "", // Sem pak dej ideálně přímý odkaz na .pdf soubor
     timeSpent: "2 months",
-    description: "Certificated to be able to work with switches, Routers on esential level",
-    timeOfFinishing: "11.1. 2025"
+    description: "Certificated to be able to work with Linux operating system",
+    timeOfFinishing: "11.1. 2026"
   },
   {
     title: "CISCO - CNNA 1",
     image: "https://www.fotoguru.cz/files/AI-a-fotograf.jpg",
-    pdfDownload: "https://github.com/MRusnak40/School_WEB_PSS_YEAR_WORK", // Sem pak dej ideálně přímý odkaz na .pdf soubor
-    timeSpent: "2 months",
+    pdfDownload: "", // Sem pak dej ideálně přímý odkaz na .pdf soubor
+    timeSpent: "20 days",
     description: "Certificated to be able to work with switches, Routers on esential level",
-    timeOfFinishing: "11.1. 2025"
+    timeOfFinishing: "IN PROGRESS"
   }
   ,
   {
     title: "CISCO - CNNA 2",
     image: "https://www.fotoguru.cz/files/AI-a-fotograf.jpg",
     pdfDownload: "https://github.com/MRusnak40/School_WEB_PSS_YEAR_WORK", // Sem pak dej ideálně přímý odkaz na .pdf soubor
-    timeSpent: "2 months",
+    timeSpent: "-",
     description: "Certificated to be able to work with switches, Routers on esential level",
-    timeOfFinishing: "11.1. 2025"
+    timeOfFinishing: "Planned"
   },
 ]
 
@@ -106,7 +106,7 @@ export default function Certificates() {
                       to="/contact"
                       className="inline-flex items-center justify-center w-full sm:w-auto gap-2 md:gap-3 px-4 md:px-8 py-2.5 md:py-4 bg-transparent text-red-500 border-2 border-red-500/30 rounded-lg md:rounded-xl font-bold text-sm md:text-lg transition-all duration-300 hover:scale-105 hover:border-red-500 hover:shadow-[0_0_25px_rgba(220,38,38,0.6)]"
                     >
-                      I GOT INTERESTED &rarr;
+                    GET IN TOUCH &rarr;
                     </Link>
 
                   </div>
