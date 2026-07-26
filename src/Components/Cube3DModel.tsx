@@ -4,7 +4,7 @@ import { useFrame, useThree } from '@react-three/fiber'
 import * as THREE from 'three'
 
 export default function Cube3DModel() {
-  const { scene } = useGLTF('/cube.glb')
+  const { scene } = useGLTF('./cube.glb')
   const groupRef = useRef<THREE.Group>(null)
   const { viewport } = useThree()
 
