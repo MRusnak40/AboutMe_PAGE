@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Přesměrování...</title>
+    <script>
+      // Uloží aktuální cestu, na kterou se uživatel pokusil dostat
+      sessionStorage.redirect = location.href;
+      // Přesměruje na kořenovou stránku (index.html)
+      location.replace(location.pathname.replace(/\/[^\/]*$/, '/') + '?p=404');
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
