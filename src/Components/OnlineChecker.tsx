@@ -8,6 +8,7 @@ export default function OnlineChecker() {
     const [isOnline, setIsOnline] = useState<boolean>(true);
 
     const firstLoad = useRef(true);
+    const openedTimes= 0;
 
     const OfflineState = (() => { toast.error("Wifi is gone🛑") })
     const OnlineState = (() => { toast.success("You are ONLINE 🌐") })
@@ -21,7 +22,7 @@ export default function OnlineChecker() {
                 await fetch("https://www.google.com", {
                     mode: "no-cors",
                     cache: "no-store",
-                    signal: AbortSignal.timeout(3000)
+                    signal: AbortSignal.timeout(5000)
                 })
 
                 setIsOnline(true)

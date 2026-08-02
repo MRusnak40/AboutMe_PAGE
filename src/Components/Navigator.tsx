@@ -28,7 +28,7 @@ export default function Navigator() {
         </li>
       ))}
     </ul>
-    <OnlineChecker />
+    
     </>
   )
 }
