@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser'
 import Scene3D from "./SceneFor3D"
 import Navigator from "./Navigator"
 import RollingMenu from "./RollingMenu"
+import toast from 'react-hot-toast'
 
 export default function Contact() {
 
@@ -20,11 +21,11 @@ export default function Contact() {
       'KJAMTJY7c1NtwNI0_'
     )
       .then(() => {
-        alert('zprava odeslana')
+        toast.success("Message sent successfully")
         formRef.current?.reset() 
       })
       .catch((err) => {
-        alert('zprava se nepodarila odeslat')
+        toast.error("Error to send message ❌")
         console.error(err)
       })
   }

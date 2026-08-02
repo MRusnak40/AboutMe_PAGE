@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
+import OnlineChecker from './OnlineChecker'
+
 
 export default function Navigator() {
-  {"{ name: 'ABOUT ME', path: '/about' },"}
+  { "{ name: 'ABOUT ME', path: '/about' }," }
   const navLinks = [
     { name: 'HOME', path: '/' },
-    
+
     { name: 'EDUCATION', path: '/education' },
     { name: 'EXPERIENCE', path: '/experience' },
     { name: 'CERTIFICATES', path: '/certificates' },
@@ -12,7 +14,8 @@ export default function Navigator() {
     { name: 'CONTACT', path: '/contact' },
   ]
 
-  return (
+  return (<>
+
     <ul className="flex flex-col gap-y-6 md:gap-y-8 px-8 md:px-24 w-full items-center md:items-end cursor-default">
       {navLinks.map((link) => (
         <li key={link.name}>
@@ -25,5 +28,7 @@ export default function Navigator() {
         </li>
       ))}
     </ul>
+    <OnlineChecker />
+    </>
   )
 }
