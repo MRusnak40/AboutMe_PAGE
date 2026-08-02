@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import OnlineChecker from './OnlineChecker'
+
 
 
 export default function Navigator() {

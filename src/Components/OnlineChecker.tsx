@@ -8,7 +8,7 @@ export default function OnlineChecker() {
     const [isOnline, setIsOnline] = useState<boolean>(true);
 
     const firstLoad = useRef(true);
-    const openedTimes= 0;
+    
 
     const OfflineState = (() => { toast.error("Wifi is gone🛑") })
     const OnlineState = (() => { toast.success("You are ONLINE 🌐") })
