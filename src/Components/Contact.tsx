@@ -5,7 +5,7 @@ import Navigator from "./Navigator"
 import RollingMenu from "./RollingMenu"
 import toast from 'react-hot-toast'
 
-//
+//random
 export default function Contact() {
 
   const formRef = useRef<HTMLFormElement>(null)
