@@ -5,6 +5,7 @@ import Navigator from "./Navigator"
 import RollingMenu from "./RollingMenu"
 import toast from 'react-hot-toast'
 
+//
 export default function Contact() {
 
   const formRef = useRef<HTMLFormElement>(null)
@@ -19,6 +20,8 @@ export default function Contact() {
   const sendEmail = (e: React.FormEvent) => {
 
     e.preventDefault()
+
+
 
 
 if (isSending || !formRef.current) return
