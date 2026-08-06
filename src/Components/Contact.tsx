@@ -9,25 +9,65 @@ export default function Contact() {
 
   const formRef = useRef<HTMLFormElement>(null)
   const [copied, setCopied] = useState(false)
+  const [isSending, setIsSending] = useState(false);
+
+  // time checker 
+  const tenMins = 5 * 60 * 1000
+
+  let historyList: number[] = []
 
   const sendEmail = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (!formRef.current) return
 
-    emailjs.sendForm(
-      'service_sdb5qmb',
-      'template_nk1gsiz',
-      formRef.current,
-      'KJAMTJY7c1NtwNI0_'
-    )
-      .then(() => {
-        toast.success("Message sent successfully")
-        formRef.current?.reset() 
-      })
-      .catch((err) => {
-        toast.error("Error to send message ❌")
-        console.error(err)
-      })
+    e.preventDefault()
+
+
+if (isSending || !formRef.current) return
+    // time checker 
+    const timeNow = Date.now()
+
+    const saved = localStorage.getItem("emailTime")
+
+    if (saved !== null) { historyList = JSON.parse(saved) }
+
+    historyList = historyList.filter((time) => timeNow - time < tenMins)
+
+    if (historyList.length < 1) {
+      setIsSending(true)
+
+
+
+      historyList.push(timeNow)
+
+      const toastId= toast.loading("Sending message...")
+
+
+      localStorage.setItem('emailTime', JSON.stringify(historyList))
+
+      emailjs.sendForm(
+        'service_sdb5qmb',
+        'template_nk1gsiz',
+        formRef.current,
+        'KJAMTJY7c1NtwNI0_'
+      )
+        .then(() => {
+          toast.success("Message sent successfully ✅",{id:toastId})
+          formRef.current?.reset()
+        })
+        .catch((err) => {
+          toast.error("Error to send message ❌",{id:toastId})
+          console.error(err)
+        }).finally(() => {
+
+          setIsSending(false)
+        })
+    } else {
+      const oldestTime = historyList[0]
+      const minutesLeft = Math.ceil((tenMins - (timeNow - oldestTime)) / (60 * 1000))
+
+      toast.error(`Limit reached! Try again in ${minutesLeft} min. ⏳`)
+      return
+    }
+
   }
 
   const copyEmail = () => {
@@ -36,7 +76,6 @@ export default function Contact() {
     setTimeout(() => setCopied(false), 2000)
   }
 
-  
   const autofillFix = "[&:-webkit-autofill]:[-webkit-box-shadow:0_0_0_100px_black_inset] [&:-webkit-autofill]:[-webkit-text-fill-color:white]"
 
   return (
@@ -55,7 +94,7 @@ export default function Contact() {
 
         <main className="relative z-10 flex flex-col justify-center min-h-screen px-6 md:px-20 min-[1700px]:px-32 pointer-events-none">
 
-         
+
           <div className="w-full max-w-lg min-[1700px]:max-w-2xl space-y-6 min-[1700px]:space-y-8 text-white pointer-events-auto">
             <div>
 
@@ -63,7 +102,7 @@ export default function Contact() {
                 Contact <span className="text-red-500">Me</span>
               </h2>
 
-              
+
               <div className="mb-6 min-[1700px]:mb-10 space-y-3 min-[1700px]:space-y-4 border-l-2 border-red-500 pl-4">
 
                 <div className="flex items-center gap-3 text-sm min-[1700px]:text-base text-gray-300">
@@ -80,7 +119,7 @@ export default function Contact() {
                   +420 722 903 550
                 </a>
 
-               
+
                 <div className="flex items-center gap-3 text-sm min-[1700px]:text-base text-gray-300 w-fit">
                   <a href="mailto:rusnak.matyas07@gmail.com" className="flex items-center gap-3 hover:text-red-500 transition-colors">
                     <svg className="w-4 h-4 min-[1700px]:w-5 min-[1700px]:h-5 text-red-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
