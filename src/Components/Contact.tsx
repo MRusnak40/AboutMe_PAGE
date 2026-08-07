@@ -21,10 +21,7 @@ export default function Contact() {
 
     e.preventDefault()
 
-
-
-
-if (isSending || !formRef.current) return
+    if (isSending || !formRef.current) return
     // time checker 
     const timeNow = Date.now()
 
@@ -37,12 +34,9 @@ if (isSending || !formRef.current) return
     if (historyList.length < 1) {
       setIsSending(true)
 
-
-
       historyList.push(timeNow)
 
       const toastId= toast.loading("Sending message...")
-
 
       localStorage.setItem('emailTime', JSON.stringify(historyList))
 
@@ -95,8 +89,7 @@ if (isSending || !formRef.current) return
           <Scene3D />
         </div>
 
-        <main className="relative z-10 flex flex-col justify-center min-h-screen px-6 md:px-20 min-[1700px]:px-32 pointer-events-none">
-
+        <main className="relative z-10 flex flex-col justify-center min-h-screen pt-24 pb-12 px-6 md:px-20 min-[1700px]:px-32 pointer-events-none">
 
           <div className="w-full max-w-lg min-[1700px]:max-w-2xl space-y-6 min-[1700px]:space-y-8 text-white pointer-events-auto">
             <div>
@@ -104,7 +97,6 @@ if (isSending || !formRef.current) return
               <h2 className="text-3xl min-[1700px]:text-5xl font-extrabold mb-4 min-[1700px]:mb-8">
                 Contact <span className="text-red-500">Me</span>
               </h2>
-
 
               <div className="mb-6 min-[1700px]:mb-10 space-y-3 min-[1700px]:space-y-4 border-l-2 border-red-500 pl-4">
 
@@ -121,7 +113,6 @@ if (isSending || !formRef.current) return
                   </svg>
                   +420 722 903 550
                 </a>
-
 
                 <div className="flex items-center gap-3 text-sm min-[1700px]:text-base text-gray-300 w-fit">
                   <a href="mailto:rusnak.matyas07@gmail.com" className="flex items-center gap-3 hover:text-red-500 transition-colors">
